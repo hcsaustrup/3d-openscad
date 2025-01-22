@@ -1,4 +1,0 @@
-module rotaryencoder_cutout() {
-
-}
-
