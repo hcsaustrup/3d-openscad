@@ -1,6 +1,6 @@
-// MT32-Pi controls for 3.5" bay
+// Gotek 5.25" Vertical Mount (base)
 // By Hans Christian Saustrup <hc@saustrup.net>
-model_version = "v0.0.1";
+model_version = "v0.1.0";
 
 use <lib/rotaryencoder.scad>
 use <lib/oled128x64-13.scad>
@@ -27,12 +27,6 @@ unit_front_size = [
 
 // Minimum width of unit walls (behind front plate)
 unit_brim = 12;
-
-// Holes for mounting
-unit_screws = [
-    [47, 10],
-    [47, 20]
-];
 
 // General plate thickness
 unit_t = 2;
@@ -96,7 +90,6 @@ module __build() {
                cylinder(r=led_d/2, h=unit_t);
         }
     }
-
 
     module rotary(positive) {
         rotaryencoder_boxed(positive, tfront=unit_t);
@@ -198,6 +191,7 @@ module __build() {
 
                         // Position before sides
                         translate([0, (side * unit_size.y) + ((1-side) * unit_t), 0])
+
                         // Rotate 90 deg on x axis
                         rotate([90,0,0])
                         union() {
@@ -226,15 +220,7 @@ module __build() {
                                 cylinder(r = side_cutout.x/2, h = side_cutout.z);
 
                             }
-
-                            // translate([
-                            //     (unit_size.x - side_cutout.x)/2,
-                            //     unit_brim,
-                            // ])
-
-
                         }
-
                     }
 
                     // Go inside unit
@@ -256,5 +242,3 @@ module __build() {
         }
     }
 }
-
-echo("---");

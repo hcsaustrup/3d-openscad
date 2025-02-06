@@ -1,6 +1,6 @@
-// MT32-Pi controls for 3.5" bay
+// Gotek 5.25" Vertical Mount (OLED cover)
 // By Hans Christian Saustrup <hc@saustrup.net>
-model_version = "v0.0.1";
+model_version = "v0.1.0";
 
 use <lib/rotaryencoder.scad>
 use <lib/oled128x64-13.scad>

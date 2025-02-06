@@ -1,6 +1,7 @@
 # Gotek 5.25" Vertical Mount
 
 This model is available on [Thingiverse](https://www.thingiverse.com/thing:6939095).
+
 ## Summary
 
 This is an alternative 3-part enclosure/case/mount for a Gotek floppy emulator running the FlashFloppy firmware. It's designed to match the style of early 80s microcomputers, with the OLED being a noticeable but rather convenient exception.
