@@ -41,7 +41,7 @@ module quad_mount(x, y, h=0, dm=5, ds=2.3) {
         screw_mount(h, dm, ds);
 }
 
-module sunken_screw_hole(h, d=3, dh=6, hh=2) {
+module sunken_screw_hole(h, d=3, dh=6.2, hh=2) {
     // Hole straight through
     cylinder(r=d/2,h=h);
     // Edged hole:

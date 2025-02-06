@@ -8,12 +8,10 @@ use <lib/pushbutton.scad>
 use <lib/shapes.scad>
 use <lib/traymount.scad>
 
-$fn = $preview ? 0 : 25; 
-
-test = false;
+include <inc/common.scad>
 
 rim = 8;
-side_rim = 8;
+side_rim = 6;
 
 tray = [95, 60];
 pcb_screws = [
@@ -25,14 +23,14 @@ pcb_screws = [
     [5, 55]
 ];
 bay_screws = [
-    [5, 55], 
+    [5, 45], 
     [5, 55]
 ];
 
 // General plate thickness
 t = 8;
 
-pcb_mount_h = 13;
+pcb_mount_h = 13.50;
 pcb_screw_h = 7;
 
 bay_mount_h = side_rim;
@@ -42,7 +40,7 @@ mount_d = 6;
 // screw_thread_d = 3;
 
 // pcb_screw threaded hole diameter
-screw_thread_d = 2.6;
+screw_thread_d = 2.8;
 
 __build();
 
@@ -63,7 +61,7 @@ module __build() {
 
             for (x = bay_screws.x)
             for (y = bay_screws.y)
-            if (x != bay_screws.x[1] || y != bay_screws.y[1])
+            if (x <= bay_screws.x[0] || y == bay_screws.y[0])
             translate([x,y])
             cylinder(r=mount_d/2, h=bay_mount_h);
 
@@ -73,12 +71,16 @@ module __build() {
             translate([x, y])
             cylinder(r=mount_d/2, h=pcb_mount_h);
 
+            // USB support
+            translate([0, 25])
+            cube([2, 10, pcb_mount_h]);
+
         }
         union() {
 
             for (x = bay_screws.x)
             for (y = bay_screws.y)
-            if (x != bay_screws.x[1] || y != bay_screws.y[1])
+            if (x <= bay_screws.x[0] || y == bay_screws.y[0])
             translate([x,y])
             cylinder(r=screw_thread_d/2, h=t + bay_mount_h);
 
@@ -89,12 +91,7 @@ module __build() {
             cylinder(r=screw_thread_d/2, h=pcb_screw_h+1);
         }
 
-
     }
-
-        translate([35, tray.y-6, t])
-        linear_extrude(1)
-        text( "Saustrup 2025 ", halign = "center", size=5);
-
-
 }
+
+ 
