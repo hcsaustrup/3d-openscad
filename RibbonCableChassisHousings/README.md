@@ -13,15 +13,33 @@ These inside-the-chassis connector housings should fix the issue.
 
 For the best fit, print a connector with the proper number of ribbon cable wires.
 
+Screw holes are all the way through, as it has proven difficult to get supports out otherwise.
+
 Parts needed:
 
 - 2 x 3mm nuts
 - 2 x 3x10/12mm screws, depending on the thickness of the chassis plating.
 
+For the Centronics housing, you'll need M2.5 screws and nuts.
+
 ## Screenshots
 
-![Screenshot from OpenSCAD](./house-centronics36-26wires.png.png "Screenshot from OpenSCAD")
+DB-9 housing with room for 10 wires:
+
 ![Screenshot from OpenSCAD](./house-db9.png "Screenshot from OpenSCAD")
+
+DB-15 housing with room for 16 wires:
+
 ![Screenshot from OpenSCAD](./house-db15.png "Screenshot from OpenSCAD")
+
+DB-25 housing with room for 26 wires:
+
 ![Screenshot from OpenSCAD](./house-db25.png "Screenshot from OpenSCAD")
-![Screenshot from OpenSCAD](./house-db25-16wires.png.png "Screenshot from OpenSCAD")
+
+DB-25 housing with room for 16 wires (RS-232):
+
+![Screenshot from OpenSCAD](./house-db25-16wires.png "Screenshot from OpenSCAD")
+
+Centronics 36 pin with room for 26 wires (parallel printer):
+
+![Screenshot from OpenSCAD](./house-centronics36-26wires.png "Screenshot from OpenSCAD")

@@ -2,7 +2,6 @@
 // By Hans Christian Saustrup <hc@saustrup.net>
 model_version = "v0.0.1";
 
-ds = 3.0;
 t = 1.5;
 
 module flat_rounded_cube(size, d=4) {
@@ -29,7 +28,7 @@ module _cube(size, d=4) {
     // cube(size);
 }
 
-module __generic_chassis_connector_housing(cutout, screw_distance, wires) {
+module __generic_chassis_connector_housing(cutout, screw_distance, wires, nut_width, nut_height, nut_spacing = 4, screw_diameter = 3, hole_through = true) {
 
     echo(["Cutout:", cutout]);
     echo(["Screw distance:", screw_distance]);
@@ -59,8 +58,8 @@ module __generic_chassis_connector_housing(cutout, screw_distance, wires) {
 
     screw_cutout = [
         house1.x,
-        5.5, // Nut width
-        2.5 // Nut height
+        nut_width,
+        nut_height
     ];
 
     difference() {
@@ -84,12 +83,12 @@ module __generic_chassis_connector_housing(cutout, screw_distance, wires) {
             translate([-house2_cutout.x/2, -house2_cutout.y/2, house1.z + house2.z])
             cube(house2_cutout);
 
-            translate([-screw_cutout.x/2, -screw_cutout.y/2, screw_cutout.z * 2])
+            translate([-screw_cutout.x/2, -screw_cutout.y/2, nut_spacing])
             cube(screw_cutout);
 
             for (x=[-0.5,0.5])
             translate([screw_distance*x, 0])
-            cylinder(r=ds/2, h=house1.z);
+            cylinder(r=screw_diameter/2, h= house1.z + (hole_through ? house1.z : 0));
         }
     }
 
@@ -110,7 +109,14 @@ module chassis_connector_housing_db(pins, wires=0) {
     ];
 
     screw_distance = inside.x + 4.68;
-    __generic_chassis_connector_housing(inside, screw_distance, wires != 0 ? wires : pins + 1);
+    __generic_chassis_connector_housing(
+        inside,
+        screw_distance = screw_distance,
+        wires = wires != 0 ? wires : pins + 1,
+        nut_width = 5.5,
+        nut_height = 2.5,
+        screw_diameter = 3
+    );
 }
 
 module chassis_connector_housing_centronics(pins, wires=0) {
@@ -127,6 +133,9 @@ module chassis_connector_housing_centronics(pins, wires=0) {
             3.5
         ],
         pin_to_pin + 22.5,
-        wires
+        wires,
+        nut_height = 2.0,
+        nut_width = 5.0,
+        screw_diameter = 2.5
     );
 }
