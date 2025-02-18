@@ -17,29 +17,26 @@ Screw holes are all the way through, as it has proven difficult to get supports 
 
 Parts needed:
 
-- 2 x 3mm nuts
-- 2 x 3x10/12mm screws, depending on the thickness of the chassis plating.
+### DB connectors
 
-For the Centronics housing, you'll need M2.5 screws and nuts.
+- 2 x 3x10M screws
+- 2 x 3M nuts
 
-## Screenshots
+### Centronics connectors
 
-DB-9 housing with room for 10 wires:
+- 2 x 2.5M screws
+- 2 x 2.5M nuts
 
-![Screenshot from OpenSCAD](./house-db9.png "Screenshot from OpenSCAD")
+## Example
 
-DB-15 housing with room for 16 wires:
+<img src="./example-without-scaled.jpg" style="width:45%; height:auto;" />
+<img src="./example-with-scaled.jpg" style="width:45%; height:auto;" />
 
-![Screenshot from OpenSCAD](./house-db15.png "Screenshot from OpenSCAD")
 
-DB-25 housing with room for 26 wires:
+## Screenshots from OpenSCAD
 
-![Screenshot from OpenSCAD](./house-db25.png "Screenshot from OpenSCAD")
-
-DB-25 housing with room for 16 wires (RS-232):
-
-![Screenshot from OpenSCAD](./house-db25-16wires.png "Screenshot from OpenSCAD")
-
-Centronics 36 pin with room for 26 wires (parallel printer):
-
-![Screenshot from OpenSCAD](./house-centronics36-26wires.png "Screenshot from OpenSCAD")
+<img src="./house-db9.png" style="width:30%; height:auto;" title="DB-9" />
+<img src="./house-db15.png" style="width:30%; height:auto;" title="DB-15" />
+<img src="./house-db25.png" style="width:30%; height:auto;" title="DB-25" />
+<img src="./house-db25-16wires.png" style="width:30%; height:auto;" title="DB-25 with 16 wire cable" />
+<img src="./house-centronics36-26wires.png" style="width:30%; height:auto;" title="36 pin Centronics with 26 wire cable" />
