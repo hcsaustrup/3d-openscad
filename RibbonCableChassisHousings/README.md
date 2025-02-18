@@ -1,6 +1,6 @@
 # Ribbon Cable Chassis Connector Housings
 
-This model is available on [Thingiverse](https://www.thingiverse.com/thing:0).
+This model is available on [Thingiverse](https://www.thingiverse.com/thing:6953672).
 
 ## Summary
 
