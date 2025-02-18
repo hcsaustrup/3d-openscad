@@ -4,10 +4,7 @@ This model is available on [Thingiverse](https://www.thingiverse.com/thing:69536
 
 ## Summary
 
-While restoring an old CP/M system, I found that one of the most fragile parts were the IDC-to-DB25 and IDC-to-Centronics
-ribbon cables that went from the various expansion cards to the chassis. Not the simple 1:1 crimped cables, but the ones
-with Centronics or DB-25 connectors soldered by hand, for instance for RS-232 or parrallel printer ports. These are often
-a bit of a birds nest, with a couple of wires taking most of the load if the cable is accidentally pulled.
+While restoring an old CP/M system, I found that one of the most fragile parts were the IDC-to-DB25 and IDC-to-Centronics ribbon cables that went from the various expansion cards to the chassis. Not the simple 1:1 crimped cables, but the ones with Centronics or DB-25 connectors soldered by hand, for instance for RS-232 or parrallel printer ports. These are often a bit of a birds nest, with a couple of wires taking most of the load if the cable is accidentally pulled.
 
 These inside-the-chassis connector housings should fix the issue.
 
