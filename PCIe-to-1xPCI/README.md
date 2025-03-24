@@ -24,6 +24,7 @@ If you're using a power hungry PCI card, consider supplying the board with 12V. 
 <img src="./box-bottom.png" style="width:30%; height:auto;" title="Bottom part of box" />
 <img src="./box-feet.png" style="width:30%; height:auto;" title="Optional feet" />
 
+<img src="./photos/adapter.jpg" style="width:30%; height:auto;" title="Adapter" />
 <img src="./photos/parts.jpg" style="width:30%; height:auto;" title="Unassembled" />
 <img src="./photos/assembled.jpg" style="width:30%; height:auto;" title="Assembled" />
 <img src="./photos/inuse.jpg" style="width:30%; height:auto;" title="Feet and card" />
