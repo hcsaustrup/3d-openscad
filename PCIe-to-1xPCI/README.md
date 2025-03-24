@@ -1,6 +1,6 @@
 # Enclosure for "PCI-E 1X TO PCI" adapter
 
-This model is available on [Thingiverse](https://www.thingiverse.com/thing:).
+This model is available on [Thingiverse](https://www.thingiverse.com/thing:6989515).
 
 ## Summary
 
