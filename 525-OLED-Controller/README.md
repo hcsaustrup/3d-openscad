@@ -8,6 +8,8 @@ This is panel for the EstarDyn OLED + rotary encoder + buttons controller board 
 
 There is both a single and double version.
 
+Could be used in retro computing projects, as a control panel for a Gotek device running FlashFloppy or an MT32-Pi.
+
 ## Notes
 
 Requirements for each controller board:
