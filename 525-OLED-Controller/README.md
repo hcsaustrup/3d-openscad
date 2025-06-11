@@ -1,5 +1,7 @@
 # 5.25" Single/Double OLED Control Panel
 
+This model is available on [Thingiverse](https://www.thingiverse.com/thing:).
+
 ## Summary
 
 This is panel for the EstarDyn OLED + rotary encoder + buttons controller board available on [AliExpress](https://www.aliexpress.com/w/wholesale-Estardyn-1.3%2525252dinch-OLED-Module.html). 
