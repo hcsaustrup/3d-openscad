@@ -1,6 +1,6 @@
 # 5.25" Single/Double OLED Control Panel
 
-This model is available on [Thingiverse](https://www.thingiverse.com/thing:).
+This model is available on [Thingiverse](https://www.thingiverse.com/thing:7062626).
 
 ## Summary
 
