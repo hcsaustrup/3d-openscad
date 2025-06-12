@@ -1,6 +1,6 @@
 # Front panel for the Chieftec BT02 chassis
 
-This model is available on [Thingiverse](https://www.thingiverse.com/thing:).
+This model is available on [Thingiverse](https://www.thingiverse.com/thing:7063284).
 
 ## Summary
 
