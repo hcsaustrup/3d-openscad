@@ -1,4 +1,4 @@
-# 80Bus Stop
+# Gemini/Nascom 80-Bus Stop
 
 A storage rack for the Gemini/Nascom 80-Bit Bus cards.
 
