@@ -2,7 +2,7 @@
 
 A storage rack for the Gemini/Nascom 80-Bit Bus cards.
 
-This model is available on [Thingiverse](https://www.thingiverse.com/thing:).
+This model is available on [Thingiverse](https://www.thingiverse.com/thing:7258329).
 
 ## Summary
 
